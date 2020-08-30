@@ -1,11 +1,4 @@
 .vs
 .vscode
-
-/StrategyPattern/bin
-/StrategyPattern/obj
-
-/BuilderPattern/bin
-/BuilderPattern/obj
-
-/Test/bin
-/Test/obj
+bin
+obj

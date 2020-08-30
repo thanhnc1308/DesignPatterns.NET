@@ -12,6 +12,8 @@
   <ItemGroup>
     <ProjectReference Include="..\StrategyPattern\StrategyPattern.csproj" />
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj" />
+    <ProjectReference Include="..\AbstractFactoryPattern\AbstractFactoryPattern.csproj" />
+    <ProjectReference Include="..\FactoryMethodPattern\FactoryMethodPattern.csproj" />
   </ItemGroup>
 
 </Project>

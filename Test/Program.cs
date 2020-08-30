@@ -1,17 +1,14 @@
 ﻿using System;
-using BuilderPattern;
+using AbstractFactoryPattern;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Student student1 = new Student(1, "Name 1", "Class 1");
-        System.Console.WriteLine(student1.ToString());
-        Student student2 = new StudentBuilder()
-                                .AddClass("Class 2")
-                                .AddId(2)
-                                .AddName("Name 2")
-                                .Build();
-        System.Console.WriteLine(student2.ToString());
+        var factory = ProductAbstractFactory.GetFactory(ProductType.Type1);
+        var product1 = factory.GetProduct1();
+        var product2 = factory.GetProduct2();
+        System.Console.WriteLine(product1.GetName());
+        System.Console.WriteLine(product2.GetName());
     }
 }
